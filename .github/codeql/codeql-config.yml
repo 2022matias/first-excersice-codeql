@@ -7,3 +7,8 @@ packs:
   java:
     - scope/java-pack1
     - scope/java-pack2@v1.0.0
+queries:
+  - name: "Run CodeQL Analysis"
+    uses: "github/codeql-action/analyze@v2"
+    with:
+      languages: javascript, java
